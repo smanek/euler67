@@ -1,0 +1,23 @@
+Problem: Project Euler #67 http://projecteuler.net/index.php?section=problems&id=67
+My general approach is to use simple dynamic programming, to solve simple sub-problems from the bottom up
+for example, in the small triangle:
+5
+9 6
+4 6 8
+0 7 1 5
+
+I simply note that from the '4' in the third row, '11' is the max sum (max(4+0, 4+7)), 
+from the 6, 13 is the max sum (6+7), and from the 8, 13 again is the max sum (8+5) - 
+thus simplifying the problem to:
+5
+9 6
+11 13 13
+
+Repeating the same process:
+5
+22 19
+
+And again:
+27
+
+Leaving the trivial problem of a 1-element triangle
